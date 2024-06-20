@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from transformers import BertTokenizerFast, BertForSequenceClassification
 
-model_dir = "models/"
+model_dir = "model"
 
 tokenizer = BertTokenizerFast.from_pretrained(model_dir)
 model = BertForSequenceClassification.from_pretrained(model_dir)
